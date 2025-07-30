@@ -5,6 +5,11 @@ terraform {
       version = "4.24.0"
     }
   }
+backend "azurerm" {
+resource_group_name = "demo"
+storage_account_name = "pipelinestg"
+container_name = "pipelinecon"
+key = "dev.terraform.tfstate"
 }
 
 provider "azurerm" {
