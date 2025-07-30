@@ -11,6 +11,7 @@ storage_account_name = "pipelinestg"
 container_name = "pipelinecon"
 key = "dev.terraform.tfstate"
 }
+}
 
 provider "azurerm" {
  features {}
